@@ -1,0 +1,27 @@
+.block {
+  text-align: center;
+  background-color: black;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 150px;
+}
+
+body {
+  background-color: #00c58b;
+  font-family: monospace;
+}
+
+.title {
+  font-size: 35px;
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.input_block {
+  height: 345px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}

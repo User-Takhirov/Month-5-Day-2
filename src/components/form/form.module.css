@@ -1,0 +1,14 @@
+.form{
+    display: flex;
+    justify-content: space-between  ;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    text-transform: capitalize;
+}
