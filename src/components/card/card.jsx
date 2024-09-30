@@ -3,13 +3,13 @@ import style from "./card.module.css";
 import trash from "../../img/trash.svg";
 import edit from "../../img/edit.svg";
 
-
-export const Card = ({ name, setData, id }) => {
+export const Card = ({ name, setData, id, setCount, count }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editInput, setEditInput] = useState(name);
 
   const deleteItem = () => {
     setData((pState) => pState.filter((item) => item.id !== id));
+    setCount(count - 1);
   };
 
   const handleInputChange = (e) => {
@@ -41,7 +41,9 @@ export const Card = ({ name, setData, id }) => {
       )}
 
       <div className={style.btn_block}>
-        <a href="#" onClick={editItem}><img className={style.trash} src={edit} alt="#" /></a>
+        <a href="#" onClick={editItem}>
+          <img className={style.trash} src={edit} alt="#" />
+        </a>
         <a href="#" onClick={deleteItem}>
           <img className={style.trash} src={trash} alt="#" />
         </a>

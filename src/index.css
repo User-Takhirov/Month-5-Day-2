@@ -25,3 +25,16 @@ body {
   overflow-y: auto;
   margin-bottom: 20px;
 }
+.textt{
+  color: white;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(251, 42, 42);
+  border-radius: 10px;
+  margin-left: auto;
+}

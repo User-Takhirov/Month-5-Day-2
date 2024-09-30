@@ -1,0 +1,22 @@
+.text{
+color: white;
+}
+.block{
+    color: white;
+}
+
+.btn{
+    color: white;
+    background-color: red;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+.main_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+   
+}
