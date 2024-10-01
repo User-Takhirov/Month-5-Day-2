@@ -6,11 +6,15 @@ import { Tasks } from "./components/tasks";
 function App() {
   const [count, setCount] = React.useState(0);
   const [item, setItem] = React.useState([]);
-  // const [delall, setdelall] = React.useState([]);
+
+  const Clearlist = () => {
+    setItem([]);
+  };
+
   return (
     <div className="block">
       <h1 className="title">To Do List</h1>
-      <Tasks count={count} />
+      <Tasks count={count} Clearlist={Clearlist} />
       <div className="input_block">
         {item.map((item) => {
           return (
