@@ -9,6 +9,7 @@ function App() {
 
   const Clearlist = () => {
     setItem([]);
+    setCount(0)
   };
 
   return (
